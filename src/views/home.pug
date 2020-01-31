@@ -8,8 +8,12 @@ html(lang="en")
         title CATCH MIND || made by HOYEONGRANDE
     body
         .loginBox#jsLogin
-            input(placeholder="What's your nickname", type="text")
+            form
+                input(placeholder="What's your nickname", type="text")
         .gameContainer#jsGame
             h1 You are Logged in !
+            div#jsNotifications
+        script.
+            window.events = !{events}
         script(src="/socket.io/socket.io.js")
         script(src="/js/main.js")
